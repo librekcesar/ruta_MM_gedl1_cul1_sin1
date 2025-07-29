@@ -47,11 +47,35 @@
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         z-index: 1000;
     }
+
+        #google-maps-button {
+    position: absolute;
+    top: 200px; /*ajustar para que no choque con los otros elementos*/
+    right: 20px;
+    background-color: #4285F4;
+    color: rgb(235, 232, 213);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 1000; /* Asegura que esté por encima del mapa */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+    }
+
+    #google-maps-button:hover {
+        background-color: #104396; /* Un azul ligeramente más oscuro al pasar el mouse */
+    }
+
     </style>
 </head>
 <body>
     <div id="map-title"> Ruta GDL1-CUL1-SIN1</div>
     <div id="map"></div>
+    <a href="https://www.google.com/maps/dir/JPF6%2BP78,+San+Pedro+Tlaquepaque,+Jal./RG5X%2BM4V,+Culiac%C3%A1n+Rosales,+Sin./6HMM%2BPWG,+Mazatl%C3%A1n,+Sin./@22.6943885,-108.0132655,822741m/data=!3m2!1e3!4b1!4m20!4m19!1m5!1m1!1s0x8428b387a6414a03:0xe59637f1bd5080a5!2m2!1d-103.2892969!2d20.6242875!1m5!1m1!1s0x86bcd6c77747f98f:0xa08eefa14316f21a!2m2!1d-107.4522031!2d24.8092375!1m5!1m1!1s0x869f5341681837c1:0xdc891939f231919d!2m2!1d-106.4151719!2d23.2343125!3e0!5m1!1e3?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" id="google-maps-button">
+        Ver en Google Maps
+    </a>
     <div id="map-legend" class="legend">
         <h4>Leyenda</h4>
         <div><span style="background-color: #d8180c; width: 20px; height: 20px; display: inline-block; border-radius: 50%;"></span> Nivel de riesgo de ruta (Alto)</div>
